@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+main{
+    height: 200px;
+    width: auto;
+    margin: -21px -8px;
+    background-image: linear-gradient(to bottom, #2e8154, #0e4b28, #043c19);
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main >p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+nav >a{
+    color: lightgrey;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 48px 10px;
+    display: inline-block;
+}
+
+nav >a:hover{
+    border-radius: 7px;
+    background-color: #2e8154;
+    color: white;
+}
+
+body{
+    background-color: #e7e5c1;
+}
+
+div{
+    background-color: white;
+    height: auto;
+    margin: 21px 100px;
+}
+h2{
+    font-family: android, Arial, Helvetica, sans-serif;
+    color: #043c19;
+    padding: 10px;
+}
+
+div >p{
+    text-align: justify;
+    text-indent: 15px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+mark.marca1{
+    font-weight: bolder;
+    color: #0e4b28;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+h3.foda{
+   background-image: linear-gradient(to right, #3bc579, #ffffff);
+   font-family: android, Arial, Helvetica, sans-serif;
+   font-size: 1em;
+   color: #043c19;
+   margin: 10px;
+   padding: 2px;
+}
+
+p >a{
+    background-color: #33b66e;
+    text-decoration: none;
+    color: #043c19;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+img{
+    text-align: center;
+    height: 220px;
+}
+
+div#video{
+    text-align: center;
+    background-color: #043c19;
+    margin: 0px;
+    height: 400px;
+    width: 725px;
+}
+
+footer{
+    background-color: #c5ebd6;
+    height: auto;
+    margin: 21px 100px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+footer >h3{
+    background-color: #2fa866;
+    padding: 10px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer >p{
+    text-align: justify;
+    text-indent: 15px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
