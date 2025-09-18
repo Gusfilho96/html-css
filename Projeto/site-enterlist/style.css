@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    align-content: center;
+  }
+  
+  .menu {
+    display: flex;         /* deixa Enterlist e ul lado a lado */
+    align-items: center;   /* alinha verticalmente */
+    gap: 30px;             /* espaço entre Enterlist e menu */
+    padding: 5px;
+    background-color: rgb(43, 42, 51);
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+.menu ul {
+    display: flex;         /* deixa os li lado a lado */
+    list-style: none;
+    gap: 15px;             /* espaço entre os li */
+  }
+  
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+h2{
+    color: white;
+}
+.capa-filme{
+  width: 200px;
+  height: 300px;
+}
+
+.capa-jogo{
+  width: 200px;
+  height: 300px;
+}
+
+.capa-jogo-advance{
+  width: 200px;
+  height: 200px;
+}
+
+.capa-jogo-64{
+  width: 300px;
+  height: 200px;
+}
+
+.livros{
+  width: 200px;
+  height: 300px;
+}
+.conteudo{
+  text-align: center;
+}
+.conteudo>h2{
+  text-align: left;
+  padding-left: 250px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
