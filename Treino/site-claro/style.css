@@ -47,11 +47,118 @@ div#menubot{
 h2{
     font-family: 'Times New Roman', Times, serif;
     font-size: 32px;
-    font-weight: bold;
+    font-weight: bolder;
+    padding-bottom: 20px;
 }
 
 h3{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     font-weight: 500;
+}
+
+.textos{
+    margin: auto;
+    margin: 105px 0px 0px 350px;
+}
+
+.planos{
+    height: 540px;
+    width: 300px;
+    border: 6px solid red;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0px 20px 20px 20px;
+}
+
+.oferta{
+    background-color: rgb(221, 249, 237);
+    padding: 4px;
+    width: 200px;
+    color: rgb(0, 107, 79);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tipo{
+    background-color: red;
+    color: white;
+    border-radius: 0px 0px 6px 6px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    width: 50px;
+    height: 23px;
+    padding: 8px 4px 4px 4px;
+    display: inline-block;
+    margin: 0px 0px 0px 18px;
+}
+
+.plano{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px 0px 10px 0px;
+}
+
+.bonus{
+    color: red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0px 0px 80px 0px;
+}
+
+.incluso{
+    color: rgb(82, 82, 82);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.valor{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 160px;
+    display: inline-block;
+}
+
+.cedula{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: black;
+    display: inline-block;
+    padding-left: 100px;
+}
+
+.preco{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    color: black;
+    display: inline-block;
+}
+.assinar{
+    margin-top: 50px;
+    background-color: rgb(254, 190, 36);
+    font-weight: 200;
+    font-size: 20px;
+    color: black;
+    height:30px;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 7px 5px 5px 5px;
+}
+
+h4 > a{
+    margin-top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(0, 129, 146); 
+    justify-content: center;
+    display: flex;
 }
