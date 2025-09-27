@@ -3,17 +3,15 @@
 *{
 margin: 0;
 padding: 0;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 div{
     margin: auto;
 }
 
-div#menutop{
-    background-color: white;
-    padding: 12px 0px 12px 0px;
-    padding-left: 338px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#menutop{
+    padding: 12px 0px 12px 338px;
     font-size: 17px;
     font-weight: 500;
 }
@@ -24,16 +22,19 @@ div#menutop{
     padding-left: 10px;
 }
 
+#menutop a:hover{
+    text-decoration: underline rgb(180, 30, 19);
+     text-decoration: underline; text-decoration-color: rgb(251, 156, 45); text-decoration-thickness: 4px; text-underline-offset: 11px;
+}
+
 #claro{
     height: 80px;
     margin: -26px 0px -26px 0px;
 }
 
-div#menubot{
+#menubot{
     background-color:rgb(218, 41, 28);
-    padding: 20px 0px 20px 0px;
-    padding-left: 338px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px 0px 20px 338px;
     font-size: 16px;
     font-weight: 700;
 }
@@ -44,63 +45,27 @@ div#menubot{
     padding-left: 30px;
 }
 
+
 h2{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 32px;
-    font-weight: bolder;
     padding-bottom: 20px;
+    font: bolder 32px 'times new roman';   
 }
 
 h3{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     font-weight: 500;
 }
 
 .textos{
-    margin: auto;
-    margin: 105px 0px 0px 350px;
-}
-
-.planos{
-    height: 540px;
-    width: 300px;
-    border: 6px solid red;
-    border-radius: 10px;
-    background-color: white;
-    padding: 0px 20px 20px 20px;
-}
-
-.oferta{
-    background-color: rgb(221, 249, 237);
-    padding: 4px;
-    width: 200px;
-    color: rgb(0, 107, 79);
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.tipo{
-    background-color: red;
-    color: white;
-    border-radius: 0px 0px 6px 6px;
-    font-size: 18px;
-    font-weight: bolder;
-    text-align: center;
-    width: 50px;
-    height: 23px;
-    padding: 8px 4px 4px 4px;
-    display: inline-block;
-    margin: 0px 0px 0px 18px;
+        margin: 105px 0px 0px 350px;
 }
 
 .box-active{
     display: inline-flex;
     height: 530px;
     width: 300px;
-    border-radius: 15px;
     border:5px solid red;
+    border-radius: 15px;
 }
 
 .card{
@@ -113,24 +78,22 @@ h3{
 }
 
 .card-top-header > h3{
-    background-color: lightgreen;
     display: inline-flex;
+    background-color: lightgreen;
     padding: 2px 5px 2px 5px;
     margin: 10px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
     font-size: 13px;
+    font-weight: 600;
 }
 
 .card-top-header > p{
-    background-color: red;
     display: inline;
+    background-color: red;
     padding: 12px 15px 5px 15px;
     margin-left: 20px;
     border-radius: 0px 0px 10px 10px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
     font-size: 18px;
+    font-weight: 600;
     color: white;
 }
 
@@ -139,23 +102,20 @@ h3{
 }
 
 .card-top-main > h2{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
     padding: 0px 0px 5px 0px;
+    font: 700 25px 'times new roman';
 }
 
 .card-top-main > h3{
     color: red;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 13px;
     font-weight: 600;
 }
 
 .card-middle{
     margin: 80px 0px 80px 10px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 12px;
     color: rgb(82, 82, 82);
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -168,8 +128,8 @@ h3{
 }
 
 .card-bottom{
-    border-top: 1px solid lightgrey;
     padding: 50px 0px 0px 0px;
+    border-top: 1px solid lightgrey;
 }
 
 
@@ -180,11 +140,10 @@ h3{
 .bottom-price > p{
     display: inline;
     padding: 0px 20px 0px 5px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(82, 82, 82);
     font-size: 16px;
     font-weight: 600;
-    color: rgb(82, 82, 82);
-}
+    }
 
 .bottom-price-in{
     display: inline-flex;
@@ -196,48 +155,46 @@ h3{
 
 .preco{
     padding-top: 5px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: black;
-}
+    }
 
 .preco1{
     margin-top: -20px;
     padding-left: 5px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 36px;
     font-weight: 700;
-    color: black;
-}
+   }
 
 .preco2{
     margin-top: -12px;
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: black;
-}
+    }
 
 .bottom-action-b{
     display: block;
+    height: 35px;
+    width: 260px;
     margin-top: 40px;
     background-color: rgb(254, 192, 36);
     border-radius: 20px;
-    height: 35px;
-    width: 260px;
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 17px;
     font-weight: 600;
 }
 
+.bottom-action-b :hover{
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgb(251, 156, 45);
+}
+
 .bottom-action > a{
     display: block;
+    padding-top: 15px;
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:rgb(0, 129, 143) ;
     font-weight: 400;
     font-size: 17px;
-    padding-top: 15px;
-}
+    }
