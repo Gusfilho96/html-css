@@ -23,8 +23,10 @@ div{
 }
 
 #menutop a:hover{
-    text-decoration: underline rgb(180, 30, 19);
-     text-decoration: underline; text-decoration-color: rgb(251, 156, 45); text-decoration-thickness: 4px; text-underline-offset: 11px;
+    text-decoration: underline;
+    text-decoration-color: rgb(251, 156, 45); 
+    text-decoration-thickness: 4px;
+    text-underline-offset: 11px;
 }
 
 #claro{
@@ -42,7 +44,15 @@ div{
 #menubot a{
     color: white;
     text-decoration: none;
-    padding-left: 30px;
+    padding: 20px;
+}
+
+#menubot a:hover{
+    padding: 30px 20px 20px 20px;
+    background-color: rgb(180, 30, 19);
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 2px;
 }
 
 
@@ -65,6 +75,14 @@ h3{
     height: 530px;
     width: 300px;
     border:5px solid red;
+    border-radius: 15px;
+}
+
+.box-inactive{
+    display: inline-flex;
+    height: 530px;
+    width: 300px;
+    border:1px solid black;
     border-radius: 15px;
 }
 
