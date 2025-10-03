@@ -71,12 +71,13 @@ h3{
 }
 
 .all-box{
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 30px;
 }
 
 .box-active{
-    display: inline-flex;
     height: 530px;
     width: 300px;
     border:5px solid rgb(218, 41, 28);
@@ -85,10 +86,9 @@ h3{
 }
 
 .box-inactive{
-    display: inline-flex;
     height: 530px;
     width: 300px;
-    border:1px solid black;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.443);
     border-radius: 15px;
     margin: 5px;
 }
@@ -98,24 +98,26 @@ h3{
 }
 
 .card-top-header{
+    display: flex;
+    justify-content: space-between;
     height: 50px;
     width: 300px;
 }
 
 .card-top-header > h3{
-    display: inline-flex;
     background-color: rgb(221, 249, 237);
+    color: rgb(0, 107, 79);
     padding: 2px 5px 2px 5px;
-    margin: 10px;
+    margin: 12px 7px 10px 7px;
     font-size: 13px;
     font-weight: 600;
 }
 
 .card-top-header > p{
-    display: inline;
+    align-self: flex-end;
     background-color: rgb(218, 41, 28);
-    padding: 7px 15px 5px 15px;
-    margin-left: 20px;
+    padding: 8px 15px 5px 15px;
+    margin: 14px 20px;
     border-radius: 0px 0px 10px 10px;
     font-size: 18px;
     font-weight: 600;
@@ -124,6 +126,7 @@ h3{
 
 .card-top-main{
     margin: 5px 0px 0px 10px;
+    height: 60px;
 }
 
 .card-top-main > h2{
@@ -140,6 +143,7 @@ h3{
 }
 
 .card-middle{
+    height: 80px;
     margin: 80px 0px 80px 10px;
     color: rgb(82, 82, 82);
     font-size: 12px;
@@ -148,74 +152,74 @@ h3{
 }
 
 .card-middle > ul{
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 100px;
+}
+
+.card-middle li{
+    padding: 5px 0px;
 }
 
 .card-middle-text{
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .card-bottom{
-    padding: 50px 0px 0px 0px;
+    height: 175px;
     border-top: 1px solid lightgrey;
 }
-
 
 .bottom-price{
     display: inline-flex;
 }
 
-.bottom-price > p{
-    display: inline;
-    padding: 0px 20px 0px 5px;
-    color: rgb(82, 82, 82);
-    font-size: 16px;
-    font-weight: 600;
-    }
-
-.bottom-price-in{
-    display: inline-flex;
+.bottom-price-mp{
+    justify-content: flex-start;
 }
-
-.bottom-price-in > span{
-    text-align: left;
-}
-
 .preco{
-    padding-top: 5px;
     font-size: 16px;
     font-weight: 700;
     }
 
 .preco1{
-    margin-top: -20px;
-    padding-left: 5px;
     font-size: 36px;
     font-weight: 700;
    }
 
 .preco2{
-    margin-top: -12px;
     font-size: 16px;
     font-weight: 700;
     }
 
+.bottom-action{
+    display: flex;
+    flex-direction: column;
+}
+
 .bottom-action-b{
-    display: block;
+    display: flex;
     height: 35px;
     width: 260px;
     margin-top: 40px;
     background-color: rgb(254, 192, 36);
     border-radius: 20px;
-    text-align: center;
     font-size: 17px;
     font-weight: 600;
+    justify-content: center;
+    justify-items: center;
 }
 
 .bottom-action-b :hover{
     height: 35px;
+    width: 260px;
     border-radius: 20px;
     background-color: rgb(251, 156, 45);
+}
+
+.bottom-action-b > p{
+    padding-top: 5px;
 }
 
 .bottom-action > a{
