@@ -173,11 +173,21 @@ h3{
 
 .bottom-price{
     display: inline-flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-top: 10px;
 }
 
 .bottom-price-mp{
-    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 17px;
+    color: rgb(82, 82, 82);
 }
+
+.bottom-price-in{
+    justify-content: flex-end;
+}
+
 .preco{
     font-size: 16px;
     font-weight: 700;
