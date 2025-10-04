@@ -143,8 +143,8 @@ h3{
 }
 
 .card-middle{
-    height: 80px;
-    margin: 80px 0px 80px 10px;
+    height: 70px;
+    margin: 70px 0px 80px 10px;
     color: rgb(82, 82, 82);
     font-size: 12px;
     font-weight: 700;
@@ -175,7 +175,7 @@ h3{
     display: inline-flex;
     justify-content: space-between;
     width: 300px;
-    padding-top: 10px;
+    padding: 25px 0px 5px 0px;
 }
 
 .bottom-price-mp{
@@ -186,11 +186,13 @@ h3{
 
 .bottom-price-in{
     justify-content: flex-end;
+    display: flex;
 }
 
 .preco{
     font-size: 16px;
     font-weight: 700;
+    margin-top: 22px;
     }
 
 .preco1{
@@ -201,6 +203,7 @@ h3{
 .preco2{
     font-size: 16px;
     font-weight: 700;
+    margin-top: 7px;
     }
 
 .bottom-action{
@@ -212,7 +215,7 @@ h3{
     display: flex;
     height: 35px;
     width: 260px;
-    margin-top: 40px;
+    margin-top: 30px;
     background-color: rgb(254, 192, 36);
     border-radius: 20px;
     font-size: 17px;
@@ -222,7 +225,7 @@ h3{
 }
 
 .bottom-action-b :hover{
-    height: 35px;
+    height: 30px;
     width: 260px;
     border-radius: 20px;
     background-color: rgb(251, 156, 45);
