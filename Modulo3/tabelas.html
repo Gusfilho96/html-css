@@ -9,18 +9,19 @@
 <body>
     <h1>Criando minha primeira Tabela</h1>
     <table>
+        <caption>Controle de Gastos</caption>
         <thead>
             <tr class="row1">
-                <th>
+                <th scope="col">
                     Data
                 </th>
-                <th>
+                <th scope="col">
                     Discriminação
                 </th>
-                <th>
+                <th scope="col">
                     Detalhe
                 </th>
-                <th>
+                <th scope="col">
                     Valor
                 </th>
             </tr>
@@ -83,6 +84,12 @@
                 </td>
             </tr>
         </tbody>
+        <tfoot class="final">
+            <tr>
+                <th scope="row" colspan="2">Valor Total</th>
+                <td colspan="2">R$ 3300</td>
+            </tr>
+        </tfoot>
     </table>
     <a href="index.html">Voltar</a>
 </body>
