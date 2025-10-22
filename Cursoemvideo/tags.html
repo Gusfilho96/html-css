@@ -7,36 +7,117 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>Lista Ordenada</h2>
-    <ol>
-      <li>acordar</li>
-      <li>comer</li>
-      <li>passear com cachorros</li>
-      <li>estudar Html</li>
-      <li>almoçar</li>
-    </ol>
-    <p>Tag: <mark>ol</mark> e <mark>li</mark></p>
-    <h2>Lista não Ordenada</h2>
-    <ul>
-      <li>pão</li>
-      <li>leite</li>
-      <li>café</li>
-      <li>manteiga</li>
-      <li>feijão</li>
-    </ul>
-    <p>Tag: <mark>ul</mark> e <mark>li</mark></p>
-    <h2>Lista de Definições</h2>
+    <main>
+      <h2>Hierarquias:</h2>
+      <p>Utiliza-se h1 a h6 para ditar quem é sub-diretório de quem</p>
+      <h2>Seleção de paragrafo</h2>
+      <p>
+        Posso usar a tag <mark>span</mark> para fazer algo com uma parte do
+        paragrafo.
+      </p>
+      <h2>Semantica vs não Semantica:</h2>
+      <p>
+        Basicamente Semantica traz um significado, vai ser utilizado no
+        <abbr title="Hyper text markup language">Html</abbr>. Já não semantica,
+        se trata de estilos, no caso
+        <abbr title="Cascading style sheets">Css</abbr>.
+      </p>
+      <h2>Qubra de linhas:</h2>
+      <p>Tag: <mark>br</mark></p>
+      <h2>Como mostrar &lt; e &gt;</h2>
 
-    <dl>
+      <h2>Comentário no code:</h2>
+      <p>Para Html usar: &lt + ! + - + -</p>
+      <h2>Marcações:</h2>
+      <p>Tag: <mark>mark</mark></p>
+      <h2>Códigos:</h2>
+      <p>
+        Para deixar algum codigo escrito no site, basta usar a Tag:
+        <mark>code</mark> <br />
+        Caso precise, usar antes de code a Tag: <mark>pre</mark>
+      </p>
+      <h2>Citações</h2>
+      <h3 style="color: lightgreen">Simples</h3>
+      <p>
+        Como diria o pai de um amigo:
+        <q>O computador é um burro muito rápido.</q>
+      </p>
+      <p>Aqui eu utilizei a Tag: <mark>q</mark></p>
+      <h3 style="color: lightgreen">Completas</h3>
+      <p>Segundo: Marina Caetano em seu livro Drogas a busca de respostas:</p>
+      <blockquote
+        cite="https://www.google.com.br/books/edition/Drogas_a_busca_de_respostas/ZUxtFzxDXlsC?hl=pt-BR&gbpv=1"
+        style="text-indent: 10px"
+      >
+        <!--parâmetro cite com algum link do autor, visualmente não acontece nada, porem na parte interna do site e em ferramentas de busca saberão que essa frase está referênciando o Autor-->
+        A nossos pais, que aprenderam a ver em nossa escolha profissional a
+        segurança e o prazer.
+      </blockquote>
+      <p>
+        Nesse caso, utilize a Tag: <mark>blockquote</mark> e parâmetro
+        <mark>cite</mark>
+      </p>
+      <h2>Imagem Interna</h2>
+      <img src="imagens/pequeno.png" alt="pequeno" />
+      <p>
+        Basta ter a imagem na pasta do seu site e usar a Tag: <mark>img</mark>
+      </p>
+      <h2>Imagem Externa</h2>
+      <img
+        src="https://cdn2.steamgriddb.com/icon/ca0daec69b5adc880fb464895726dbdf/24/256x256.png"
+        alt="NFS Most Wanted"
+      />
+      <p>Basta colar o link da imagem no src.</p>
+      <p>
+        <strong class="importante">Importante !!</strong> Redimencionar a imagem
+        usando Css, não diminuira o tamanho do arquivo.
+      </p>
+      <h2>Lista Ordenada</h2>
+      <ol>
+        <li>acordar</li>
+        <li>comer</li>
+        <li>passear com cachorros</li>
+        <li>estudar Html</li>
+        <li>almoçar</li>
+      </ol>
+      <p>Tag: <mark>ol</mark> e <mark>li</mark></p>
+      <h2>Lista não Ordenada</h2>
+      <ul>
+        <li>pão</li>
+        <li>leite</li>
+        <li>café</li>
+        <li>manteiga</li>
+        <li>feijão</li>
+      </ul>
+      <p>Tag: <mark>ul</mark> e <mark>li</mark></p>
+      <h2>Lista de Definições</h2>
       <dt>Html</dt>
       <dd>Hyper text markup language</dd>
       <dt>Css</dt>
       <dd>Cascating style sheet</dd>
       <p>Tag: <mark>dl</mark>, <mark>dt</mark> e <mark>dd</mark></p>
       <p>
-        <strong>Importante !!</strong> Pode-se usar os parametros
-        <mark>type</mark> e <mark>start</mark>
+        <strong class="importante">Importante !!</strong> Pode-se usar os
+        parametros <mark>type</mark> e <mark>start</mark>
       </p>
-    </dl>
+
+      <h2>Atalhos:</h2>
+      <p>
+        Envelopar algo:
+        <mark style="background-color: yellow">Ctrl + Shift + P</mark> <br />
+        Atalho de caminho:
+        <mark style="background-color: yellow">Crtl + Espaço</mark> <br />
+        Criar item:
+        <mark style="background-color: yellow">Crtl + Click na palavra</mark>
+        <br />
+        Comentario em HTML e CSS
+        <mark style="background-color: yellow">Crtl + Alt + A</mark><br />
+        Organizar codigos:
+        <mark style="background-color: yellow">Tab ou Shift + Tab</mark>
+      </p>
+    </main>
+    <p style="text-align: center; font-size: 25px">
+      <a href="index.html" target="_self" rel="prev">Voltar</a>
+    </p>
   </body>
 </html>
