@@ -12,43 +12,107 @@
   --cor3: rgb(53, 79, 82);
 }
 
-*{ /* configuração global */
-    margin: 0px;
-    padding: 0px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  /* configuração global */
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-mark{
-   background-color: lightgreen;
-   color: black;
-   padding: 2px;
+mark {
+  background-color: lightgreen;
+  color: black;
+  padding: 2px;
 }
 
- h2, h3{
-   padding: 25px 10px 5px 10px;
- }
-
- p{
-   padding: 5px 10px;
-   line-height: 30px;
- }
-
-.subtitulo{
-    text-align: center;
-    margin: 3px;
-    font-size: 17px;
+h2 {
+  padding: 40px 10px 5px 30px;
 }
 
-.importante{
-   color: red;
+h3 {
+  padding: 25px 10px 5px 30px;
+  color: lightgreen;
 }
 
- nav{
-    text-align: center;
-    font-size: 2em;
- }
+p {
+  padding: 10px 30px;
+  line-height: 30px;
+}
+
+blockquote {
+  padding-left: 50px;
+}
+
+img,
+audio,
+video {
+  padding: 20px 30px;
+}
+
+.subtitulo {
+  text-align: center;
+  margin: 3px;
+  font-size: 17px;
+}
+
+.importante {
+  color: red;
+}
+
+nav {
+  text-align: center;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: greenyellow;
+  text-decoration: underline;
+}
+
+ol,
+dl {
+  padding: 7px 5px 5px 50px;
+}
+
+ul {
+  padding: 0px 5px 5px 50px;
+}
+
+iframe {
+  padding: 5px 5px 5px 30px;
+}
+
+li,
+dt {
+  padding: 5px 0px;
+}
+
+dd {
+  padding-left: 50px;
+}
+
+.ladoalado {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+nav {
+  padding: 80px 0px;
+}
+nav > ul {
+  list-style: none;
+}
+
+.index {
+  text-align: center;
+  padding: 70px;
+}
