@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seletores CSS</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h2 {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Estilos</h2>
+    <div>
+        <h3>Em Linha</h3>
+        <p>&ltp style="background-color: yellow;">Texto do parágrafo&lt/p&gt</p>
+        <p>Não recomendado para varias modificações.</p>
+    </div>
+    <div>
+        <h3>Local</h3>
+        <p>
+          &ltstyle&gt <br />
+          h2 { background-color: black; } <br />
+          &lt/style&gt
+        </p>
+        <p>Basta colocar style dentro da parte do head, isso modifica itens </p>
+    </div>
+    <div>
+        <h3>Interno</h3>
+        <p>&ltlink rel="stylesheet" href="style.css" /&gt</p>
+        <p>Criano da mesma forma na parte do head, porém ele utiliza um arquivo CSS para poder modificiar todas as paginas com esse link</p>
+    </div>
+    <p style="text-align: center; font-size: 25px">
+      <a href="index.html" target="_self" rel="prev">Voltar</a>
+    </p>
+  </body>
 </html>
+ 
