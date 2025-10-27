@@ -100,7 +100,6 @@ dd {
   padding-left: 50px;
 }
 
-
 nav {
   padding: 80px 0px;
 }
@@ -111,4 +110,33 @@ nav > ul {
 .index {
   text-align: center;
   padding: 70px;
+}
+
+table {
+  background-color: rgb(100, 24, 24);
+  border-collapse: collapse;
+  height: 50px;
+  width: 500px;
+}
+
+tbody tr:nth-child(even) {
+  /* pode-se utilizar 2n no lugar de even. ou outro numero qualquer tipo 3n (vai pular 2 e afetar 1) */
+  background-color: lightcoral;
+}
+
+tbody tr:nth-child(odd) {
+  /* pode-se utilizar 2n-1, isso vai dar o mesmo efeito de odd. */
+  background-color: lightgrey;
+  color: black;
+}
+
+th,
+td {
+  border: 1px black solid;
+}
+
+caption {
+  background-color: rgb(100, 24, 24);
+  border: 1px solid black;
+  border-collapse: collapse;
 }
