@@ -7,7 +7,40 @@
     <title>Modulo 3</title>
   </head>
   <body>
-    <h1>Criando minha primeira Tabela</h1>
+    <h2>Hierarquias</h2>
+    <p>
+      É importante manter sempre a hierarquias, já que mesmo se colocado no topo
+      um item que não segue a hierarquia, vai surgir em um local diferente.
+      Abaixo a ordem:
+    </p>
+    <p>
+      Caption = <mark>&ltcaption&gt</mark> <br />
+      Table = <mark>&lttable&gt</mark> <br />
+      Row = <mark>&lttr&gt</mark> <br />
+      Header = <mark>&ltth&gt</mark> <br />
+      Data = <mark>&lttd&gt</mark> <br /><br />
+      OBS: O Fechamento dessas tags é opcional.
+    </p>
+
+    <h2>Anatomia</h2>
+    <p>
+      Podemos utilizar algumas outras tags para organizar melhor as tabelas de
+      forma semantica. São elas: <mark>&ltthead&gt</mark>,
+      <mark>&lttbody&gt</mark> e <mark>&lttfoot&gt</mark>.
+    </p>
+    <h2>Zebrado</h2>
+    <p>
+      Utiliza-se a pseudoclass: <mark>:nth-child(even)</mark>,
+      <mark>:nth-child(odd)</mark>, <mark>:nth-child(n2)</mark> e
+      <mark>:nth-child(2n-1)</mark>
+    </p>
+    <h2>Selecionar Coluna ou Linha</h2>
+    <p>
+      Usando <mark>&ltcolgroup&gt</mark>, <mark>&ltrowgroup&gt</mark> e dentro
+      <mark>&ltcol&gt</mark>, <mark>&ltrow&gt</mark> podemos criar classes e/ou
+      ids para nossas colunas, inclusive usar <mark>span</mark> para modificar
+      multiplas colunas ou linhas
+    </p>
     <table>
       <caption>
         Controle de Gastos
