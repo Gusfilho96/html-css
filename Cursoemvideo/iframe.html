@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Todos os sites aceitam Iframe?</h2>
+    <p>
+      Não, um dos problemas do Iframe é que muitos sites não aceitam ser
+      "compartilhados" via Iframes. No caso do YouTube, é a forma que ele deixa
+      você hospedar vídeos no seu site.
+    </p>
+    <h2>Tamanho Padão:</h2>
+    <p>
+      Padrão: 300x150. Podemos adicionar um outro tamanho pelo próprio Iframe ou
+      pelo CSS (CSS sempre soberano nesse caso)
+    </p>
+    <h2>Navegação</h2>
+    <ul>
+      <li><a href="extras/pag.html" target="navegar">Home</a></li>
+      <li><a href="extras/pag1.html" target="navegar">Pagina 1</a></li>
+      <li><a href="extras/pag2.html" target="navegar">Pagina 2</a></li>
+      <li><a href="extras/pag3.html" target="navegar">Pagina 3</a></li>
+    </ul>
+    <iframe name="navegar" src="extras/pag.html" frameborder="0"
+      >O Site não pode ser exibido, aqui está o link:
+      Exemplo.bbbbrrr.commm</iframe
+    >
+    <p>
+      Podemos Utilizar <mark>Iframe</mark> e adicionar um <mark>Nome</mark> nos
+      parâmetros em conjunto com <mark>target="nome"</mark> para abrir a pagina
+      no iframe.
+    </p>
+    <h2>Segurança</h2>
+    <p>
+      O maior problema de usar Iframe em páginas fora do site, é o fato de você
+      ficar vulnerável a qualquer ataque no naquele site. Fora isso, tem o fato
+      de que o site pode alterar o conteudo e trazer problemas para o seu site.
+    </p>
+    <h2>Detalhes:</h2>
+    <p>
+      É uma boa sempre colocar uma <mark>mensagem</mark> ou
+      <mark>link</mark> dentro do <mark>Iframe</mark>, dessa forma, caso o
+      navegador não consiga exibir o conteúdo os usuários vão conseguir acessar
+      o site.
+    </p>
+    <p>
+      <mark>Scrolling="yes"</mark> ou <mark>"no"</mark> esse parâmetro não
+      funciona em todos os navegadores.
+    </p>
+    <p style="text-align: center; font-size: 25px">
+      <a href="index.html" target="_self" rel="prev">Voltar</a>
+    </p>
+  </body>
+</html>
