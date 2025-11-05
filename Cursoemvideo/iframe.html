@@ -35,11 +35,14 @@
       no iframe.
     </p>
     <h2>Segurança</h2>
+    <h3>Problemas</h3>
     <p>
       O maior problema de usar Iframe em páginas fora do site, é o fato de você
       ficar vulnerável a qualquer ataque no naquele site. Fora isso, tem o fato
       de que o site pode alterar o conteudo e trazer problemas para o seu site.
     </p>
+    <h3>Solução</h3>
+    <p>Adicionando o parâmetro <mark>referrerpolicy="no-referrer"</mark> o site que está usando um iframe do seu site, não conseguira coletar dados de usuarios. Outro parâmetro importantissimo é o <mark>sandbox="sandbox"</mark> ele basicamente bloqueia tudo referente ao iframe. Podemos ainda permitir algumas coisas especificas ou da mesma origem, podemos utilizar: <mark>"allow-same-origin"</mark>, <mark>"allow-forms"</mark>, <mark>"allow-scripts"</mark>, etc</p>
     <h2>Detalhes:</h2>
     <p>
       É uma boa sempre colocar uma <mark>mensagem</mark> ou
