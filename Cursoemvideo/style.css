@@ -27,7 +27,8 @@ body {
 mark {
   background-color: lightgreen;
   color: black;
-  padding: 2px;
+  padding: 3px;
+  font-weight: bolder;
 }
 
 h2 {
