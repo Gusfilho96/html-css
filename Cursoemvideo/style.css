@@ -141,3 +141,8 @@ caption {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
+input{
+  color: white;
+  background-color: darkred;
+}

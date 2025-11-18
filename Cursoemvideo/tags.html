@@ -213,7 +213,19 @@
       <h2>Iframes</h2>
       <p>Adiciona uma janela de outro site ou página, basicamente é isso que acontece quando você adiciona um video hospedado no youtube no seu site. O <mark>&ltiframe&gt</mark> tem um tamanho padrão de 300x150. Apesar de ser possivel alterar o height do iframe dentro da própria tag, é preferivel utilizar css, já que esse é priorizado. Outra coisa que pose ser feita é usar <mark>scrollin="no"/"yes/"auto"</mark></p>
       <p>OBS: Não esquecer de colocar mensagem de erro ou até mesmo o link caso o navegador ou aparelho não aceite o iframe.</p>
-
+      <h2>Formularios</h2>
+      <p>Utilizamos <mark>&ltform&gt</mark> para adicionar um formulario, esse formulario precisara de alguns parâmetros adicionais para funcionar de forma correta.</p>
+      <p>Aqui estão alguns parâmetros e suas serventias:</p>
+      <p>
+        <mark>Metodo</mark> = Get é usado para que podem ser expostos ou caso queira compartilhar a url, só pode enviar até 3000bites. Já Post adiciona uma pequena camada de protção para dados sensiveis, envio de arquivos e acima de 3000bites <br>
+        <mark>Autocomplete</mark> = Ativa ou Desativa o autopreencher <br>
+        <mark>Action</mark> = Envia aquele formulario para sua linguagem de preferencia <br>
+        <mark>Input</mark> = Forma de escolher que tipo de informação sera preenchina no formulario <br>
+        <mark>Nome</mark> = Na utilização de label, name é mais util para HTML e PHP. <br>
+        <mark>ID</mark> = Já esse é mais util para JavaScript
+      </p>
+      <p>OBS: Antigamente o uso de post era preferivel por conta da velocidade, hoje em dia essa diferença é inperseptivel</p>
+      <p><strong class="importante">Importante!!!</strong> Sempre utilizar HTTPS para dados sensiveis, caso contrario seus dados ficarão expostos, mesmo utilizando Post, alguns dados sensiveis: senha, cep, endereço,etc.</p>
       <h2>Atalhos:</h2>
       <p>
         Envelopar algo:
