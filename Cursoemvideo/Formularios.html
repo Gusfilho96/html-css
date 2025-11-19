@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Formulários:</h2>
+    <p>
+      Utilizando <mark>&ltform%gt</mark> podemos criar um formulário. Usamos o
+      <mark>Action</mark> para informar para onde os arquivos vão ser enviados,
+      no caso do exemplo a baixo é <mark>PHP</mark>
+    </p>
+
+    <h3>Input:</h3>
+    <p>
+      Existem bários tipos de <mark>input</mark>, é importante que exista uma
+      ligação entre o <mark>input</mark> e o <mark>label</mark>. Isso serve para
+      o navegador saber a quem aquele <mark>input</mark> está ligado.
+    </p>
+    <p>
+      As ligações dependem do tipo de linguagem que você ira utilizar.
+      <mark>HTML</mark> e <mark>PHP</mark> funcionam melhor com
+      <mark>Name</mark>, já <mark>JavaScript</mark> funciona melhor com
+      <mark>ID</mark>.
+    </p>
+    <h3>Get vs Post</h3>
+    <p>
+      O método <mark>Get</mark> serve para informações
+      <mark>não sigilosas</mark> até 3000Bites, esse metodo serve, também para
+      que possamos enviar uma <mark>URL</mark> que contenha aquela informação,
+      um exemplo legal seria as pesquisas do <mark>Google</mark>
+    </p>
+    <p>
+      Já o método <mark>Post</mark>, apesar de ser um pouco mais seguro, ele
+      ainda permite que as informações sejam acessadas.
+    </p>
+    <p>
+      <strong class="importante">Importante!!!</strong> Estude HTTPs para que as
+      informações fiquem realmente seguras.
+    </p>
+    <h3>Atributos</h3>
+    <p>
+      <mark>Required</mark> = Campo obrigatório. <br />
+      <mark>Min/Max Lenght</mark> = Tamanho maximo e/ou minimo. <br />
+      <mark>Placeholder</mark> = Escrita temporária dentro da caixa. <br />
+      <mark>Autocomplete</mark> = Preenchimento automático, funciona com informações salvas
+      no browser. <br />
+      <mark>Min/Max</mark> = Valor minimo e/ou maximo. <br />
+    </p>
+
+    <div>
+      <form action="enviar.php" method="post" autocomplete="off">
+        <p>
+          <label for="inome">Nome completo:</label>
+          <input
+            type="text"
+            name="nome"
+            id="inome"
+            maxlength="30"
+            required
+            placeholder="Gustavo Filho"
+          />
+        </p>
+        <p>
+          <label for="isenha">Senha:</label>
+          <input
+            type="password"
+            name="Senha"
+            id="isenha"
+            required
+            placeholder="Password"
+          />
+        </p>
+        <p>
+          <label for="inota">Nota</label>
+          <input
+            type="number"
+            name="nota"
+            id="inota"
+            min="0"
+            max="10"
+            step="0.5"
+            placeholder="666"
+          />
+        </p>
+        <p>
+          <label for="idata">Data</label>
+          <input type="date" name="data" id="idata" value="1996-02-28" />
+        </p>
+        <input type="submit" value="Mandar" />
+        <input type="reset" value="Resetar" />
+      </form>
+    </div>
+    <p style="text-align: center; font-size: 25px">
+      <a href="index.html" target="_self" rel="prev">Voltar</a>
+    </p>
+  </body>
+</html>
