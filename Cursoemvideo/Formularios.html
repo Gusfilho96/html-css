@@ -14,7 +14,7 @@
       no caso do exemplo a baixo é <mark>PHP</mark>
     </p>
 
-    <h3>Input:</h3>
+    <h2>Input:</h2>
     <p>
       Existem bários tipos de <mark>input</mark>, é importante que exista uma
       ligação entre o <mark>input</mark> e o <mark>label</mark>. Isso serve para
@@ -26,7 +26,12 @@
       <mark>Name</mark>, já <mark>JavaScript</mark> funciona melhor com
       <mark>ID</mark>.
     </p>
-    <h3>Get vs Post</h3>
+    <h2>Checkbox & Radio</h2>
+    <h3>Checkbox</h3>
+    <p>O input de tipo <mark>checkbox</mark> serve para uma marcação simples, um exemplo seria a marcação de esportes que a pessoa pratica. Utilizar o <mark>label</mark> nesse caso server tanto para o navegador saber a quem aquele input está ligado, e servira também para que o usuario utilize a palavra para marcar a <mark>checkbox</mark>.</p>
+    <h3>Radio</h3>
+    <p>Já o <mark>radio</mark> pode ser utilizado quando deve-se marcar apenas uma opção, um exemplo seria a seleção do sexo. Nesse caso o <mark>name</mark> deve ser o mesmo em ambos dentro daquele <mark>fieldset</mark>, já <mark>label</mark> pode ser utilizado normalmente. Outra coisa importante é o value, um simples <mark>value="M" ou "F"</mark> ajudara na hora do submit.</p>
+    <h2>Get vs Post</h2>
     <p>
       O método <mark>Get</mark> serve para informações
       <mark>não sigilosas</mark> até 3000Bites, esse metodo serve, também para
@@ -104,6 +109,19 @@
           <label for="idata">Data</label>
           <input type="date" name="data" id="idata" value="1996-02-28" />
         </p>
+        <fieldset>
+          <legend>Checkbox</legend>
+          <input type="checkbox" name="efut" id="ifut" checked><label for="ifut">Futebol</label>
+          <input type="checkbox" name="ebas" id="ibas"><label for="ibas">Basket</label>
+          <input type="checkbox" name="ehan" id="ihan" checked><label for="ihan">Handball</label>
+          <input type="checkbox" name="enat" id="inota"><label for="inat">Natação</label>
+        </fieldset>
+        <fieldset>
+          <legend>Radio</legend>
+          <input type="radio" name="sexo" id="smas" value="M" checked><label for="smas">Masculino</label>
+          <input type="radio" name="sexo" id="sfem" value="F"><label for="sfem">Feminino</label>
+          <input type="radio" name="sexo" id="sout" value="O"><label for="sout">Outro</label>
+        </fieldset>
         <input type="submit" value="Mandar" />
         <input type="reset" value="Resetar" />
       </form>
