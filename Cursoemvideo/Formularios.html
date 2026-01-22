@@ -14,46 +14,6 @@
       no caso do exemplo a baixo é <mark>PHP</mark>
     </p>
 
-    <h2>Input:</h2>
-    <p>
-      Existem vários tipos de <mark>input</mark>, é importante que exista uma
-      ligação entre o <mark>input</mark> e o <mark>label</mark>. Isso serve para
-      o navegador saber a quem aquele <mark>input</mark> está ligado.
-    </p>
-    <p>
-      As ligações dependem do tipo de linguagem que você ira utilizar.
-      <mark>HTML</mark> e <mark>PHP</mark> funcionam melhor com
-      <mark>Name</mark>, já <mark>JavaScript</mark> funciona melhor com
-      <mark>ID</mark>.
-    </p>
-    <h3>Color</h3>
-    <p>Esse tipo de input premite que o usuario selecione alguma cor, podemos usar <mark>value</mark> para iniciar com alguma cor.</p>
-    <label for="icor">Escolha uma cor</label>
-    <input type="color" name="cor" id="icor" value="#00ff00">
-    <h3>Range</h3>
-    <p>Esse metodo funciona para presquisa de satisfação por exemplo, podemos colocar valor <mark>min</mark> ou <mark>max</mark> e o <mark>value</mark> para o nivel inicial.</p>
-    <label for="inivel">De 0 a 10 qual seu nivel de satisfação?</label>
-    <input type="range" name="nivel" id="inivel" min="1" max="10" value="1">
-    <h3>File</h3>
-    <p>Esse metodo permite enviar algum arquivo, ao utilizar esse recurso é importante utilizar o metodo <mark>Post</mark>, caso contrario o arquivo não será enviado.</p>
-    <label for="ifile">Envie algum arquivo</label>
-    <input type="file" name="file" id="ifile">
-    <h2>Checkbox & Radio</h2>
-    <h3>Checkbox</h3>
-    <p>O input de tipo <mark>checkbox</mark> serve para uma marcação simples, um exemplo seria a marcação de esportes que a pessoa pratica. Utilizar o <mark>label</mark> nesse caso server tanto para o navegador saber a quem aquele input está ligado, e servira também para que o usuario utilize a palavra para marcar a <mark>checkbox</mark>.</p>
-    <fieldset>
-          <legend>Checkbox</legend>
-          <input type="checkbox" name="efut" id="ifut" checked><label for="ifut">Futebol</label>
-          <input type="checkbox" name="ebas" id="ibas"><label for="ibas">Basket</label>
-          <input type="checkbox" name="ehan" id="ihan" checked><label for="ihan">Handball</label>
-          <input type="checkbox" name="enat" id="inota"><label for="inat">Natação</label>
-        </fieldset>
-    <h3>Radio</h3>
-    <p>Já o <mark>radio</mark> pode ser utilizado quando deve-se marcar apenas uma opção, um exemplo seria a seleção do sexo. Nesse caso o <mark>name</mark> deve ser o mesmo em ambos dentro daquele <mark>fieldset</mark>, já <mark>label</mark> pode ser utilizado normalmente. Outra coisa importante é o value, um simples <mark>value="M" ou "F"</mark> ajudara na hora do submit.</p>
-     <legend>Radio</legend>
-          <input type="radio" name="sexo" id="smas" value="M" checked><label for="smas">Masculino</label>
-          <input type="radio" name="sexo" id="sfem" value="F"><label for="sfem">Feminino</label>
-          <input type="radio" name="sexo" id="sout" value="O"><label for="sout">Outro</label>
     <h2>Get vs Post</h2>
     <p>
       O método <mark>Get</mark> serve para informações
@@ -69,7 +29,150 @@
       <strong class="importante">Importante!!!</strong> Estude HTTPs para que as
       informações fiquem realmente seguras.
     </p>
-    <h3>Agrupar</h3>
+
+    <h2>Elementos:</h2>
+    <p>
+      Existem vários tipos de <mark>input</mark>, é importante que exista uma
+      ligação entre o <mark>input</mark> e o <mark>label</mark>. Isso serve para
+      o navegador saber a quem aquele <mark>input</mark> está ligado.
+    </p>
+    <p>
+      As ligações dependem do tipo de linguagem que você ira utilizar.
+      <mark>HTML</mark> e <mark>PHP</mark> funcionam melhor com
+      <mark>Name</mark>, já <mark>JavaScript</mark> funciona melhor com
+      <mark>ID</mark>.
+    </p>
+    <h3>Color</h3>
+    <p>
+      Esse tipo de input premite que o usuario selecione alguma cor, podemos
+      usar <mark>value</mark> para iniciar com alguma cor.
+    </p>
+    <label for="icor">Escolha uma cor</label>
+    <input type="color" name="cor" id="icor" value="#00ff00" />
+    <h3>Range</h3>
+    <p>
+      Esse metodo funciona para presquisa de satisfação por exemplo, podemos
+      colocar valor <mark>min</mark> ou <mark>max</mark> e o
+      <mark>value</mark> para o nivel inicial.
+    </p>
+    <label for="inivel">De 0 a 10 qual seu nivel de satisfação?</label>
+    <input type="range" name="nivel" id="inivel" min="1" max="10" value="1" />
+    <h3>File</h3>
+    <p>
+      Esse metodo permite enviar algum arquivo, ao utilizar esse recurso é
+      importante utilizar o metodo <mark>Post</mark>, caso contrario o arquivo
+      não será enviado.
+    </p>
+    <label for="ifile">Envie algum arquivo</label>
+    <input type="file" name="file" id="ifile" />
+    <h3>Checkbox</h3>
+    <p>
+      O input de tipo <mark>checkbox</mark> serve para uma marcação simples, um
+      exemplo seria a marcação de esportes que a pessoa pratica. Utilizar o
+      <mark>label</mark> nesse caso server tanto para o navegador saber a quem
+      aquele input está ligado, e servira também para que o usuario utilize a
+      palavra para marcar a <mark>checkbox</mark>.
+    </p>
+    <fieldset>
+      <legend>Checkbox</legend>
+      <input type="checkbox" name="efut" id="ifut" checked /><label for="ifut"
+        >Futebol</label
+      >
+      <input type="checkbox" name="ebas" id="ibas" /><label for="ibas"
+        >Basket</label
+      >
+      <input type="checkbox" name="ehan" id="ihan" checked /><label for="ihan"
+        >Handball</label
+      >
+      <input type="checkbox" name="enat" id="inota" /><label for="inat"
+        >Natação</label
+      >
+    </fieldset>
+    <h3>Radio</h3>
+    <p>
+      Já o <mark>radio</mark> pode ser utilizado quando deve-se marcar apenas
+      uma opção, um exemplo seria a seleção do sexo. Nesse caso o
+      <mark>name</mark> deve ser o mesmo em ambos dentro daquele
+      <mark>fieldset</mark>, já <mark>label</mark> pode ser utilizado
+      normalmente. Outra coisa importante é o value, um simples
+      <mark>value="M" ou "F"</mark> ajudara na hora do submit.
+    </p>
+    <legend>Radio</legend>
+    <input type="radio" name="sexo" id="smas" value="M" checked /><label
+      for="smas"
+      >Masculino</label
+    >
+    <input type="radio" name="sexo" id="sfem" value="F" /><label for="sfem"
+      >Feminino</label
+    >
+    <input type="radio" name="sexo" id="sout" value="O" /><label for="sout"
+      >Outro</label
+    >
+    <h3>Select</h3>
+    <p>Esse elemento tem vários atibutos interessantes, podemos colocar <mark>option</mark> com as opções e o <mark>value</mark> que serão enviados ao serem selecionados. Podemos também adicionar <mark>optgroup</mark> para adicionar grupos dentre as escolhas, o atributo <mark>label</mark> pode então ser adicionado para informar o nome do grupo. Outro elemento é o <mark>selected</mark> utilizado dentro de <mark>option</mark> para que aquela opção já apareça selecionada</p>
+    <p>Obs: <mark>select</mark> é um elemento separado, não um <mark>input:select</mark></p>
+    <p>
+      <label for="iest">Estados</label>
+      <select name="est" id="iest">
+        <option value="">Escolha seu estado</option selected>
+        <optgroup label="Estados com Letra A">
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+        </optgroup>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goias</option>
+        <optgroup label="Estados com Letra M">
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+        </optgroup>
+        <optgroup label="Estados com Letra P">
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernanbuco</option>
+          <option value="PI">Piauí</option>
+        </optgroup>
+        <optgroup label="Estados com Letra R">
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+        </optgroup>
+        <optgroup label="Estados com Letra S">
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+        </optgroup>
+          <option value="TO">Tocantins</option>
+      </select>
+    </p>
+    <h3>Text</h3>
+    <p>O input de tipo text é bastante util, ele pode servir para enviar um texto simples ou criar uma lista que se adapta ao usuário. Para criar uma lista usando <mark>text</mark>, adicione o atributo <mark>list</mark> e crie um elemento <mark>datalist</mark>, adicione um <mark>id</mark> que sera lincado o atributo <mark>list</mark> e dentro dela adicione <mark>option</mark>com todos os elementos da lista que você quer.</p>
+    <p>
+      <label for="iprof">Profissões</label>
+      <input type="text" name="prof" id="iprof" list="listprof">
+      <datalist id="listprof">
+        <option value="Prof">Professor</option>
+        <option >Programador</option>
+        <option value="Estud">Estudante</option>
+        <option>Zelador</option>
+      </datalist>
+    </p>
+    <h3>Textarea</h3>
+    <p>Serve para que o usuário tenha uma area onde ele pode escrever uma mensagem, acredito que isso é mais utilizado para sugestões no caso de serviços prestados. Para criar essa área, basta adicionar o elemento <mark>textarea</mark>, nela você pode definir o numero de <mark>colunas</mark> e <mark>linhas</mark> mostradas, esse tamanho pode ser configurável pelo usuario</p>
+    <p>
+      <label for="imgsbox">Sugestões</label>
+      <textarea name="mgsbox" id="imgsbox" cols="20" rows="3">Qual a sua mensagem????</textarea>
+    </p>
+
+    <h2>Agrupar</h2>
     <p>
       Utilizando <mark>&ltfieldset&gt</mark> funciona para agrupar os campos
       contidos nessa tag, isso pode ser usado em conjunto com a tag
@@ -86,7 +189,7 @@
       <mark>Min/Max</mark> = Valor minimo e/ou maximo. <br />
     </p>
 
-    <h3>Estudar</h3>
+    <h2>Estudar</h2>
     <p>
       Depois pesquisar e estudar RegEx ou expressões regulares, importante para
       uso de formularios com e-mails e telefones. Obs: Aula 23 do modulo 4, o
