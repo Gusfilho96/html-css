@@ -9,12 +9,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="other.css" />
   </head>
-  <body>
+  <body onresize="mudouTamanho()">
     <header>
       <h1>Menu Responsivo</h1>
       <!-- estudar JavaScript !!! -->
-      <span id="menu-icon" class="material-icons" onclick="clickMenu()">menu</span>
+      <span id="menu-icon" class="material-icons" onclick="clickMenu()"
+        >menu</span
+      >
       <menu id="itens">
         <ul>
           <li><a href="#">Opção 1</a></li>
@@ -25,48 +28,56 @@
         </ul>
       </menu>
     </header>
-    <article>
-      <h2>Lorem lorem lorem</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla possimus
-        pariatur eos quam nostrum repellat. Quasi accusantium, facilis dolor
-        reprehenderit expedita tenetur pariatur incidunt distinctio nostrum
-        itaque reiciendis excepturi non! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quae, aspernatur modi molestias non natus nam
-        distinctio odit voluptatem esse ad aliquid? Illum quo, quas sapiente
-        culpa quia voluptates accusantium amet.
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe et rem
-        dolorum voluptatibus exercitationem repudiandae ut expedita repellat sit
-        provident, beatae aliquam pariatur iure culpa animi officia perferendis
-        architecto tenetur?
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-        mollitia fuga nisi et aliquid suscipit ad, tempore sequi cupiditate odio
-        vitae dolores veniam placeat aspernatur, impedit temporibus, quidem
-        reiciendis porro! Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Reiciendis nam eligendi molestias veritatis voluptates, debitis
-        esse rerum sint laboriosam iste asperiores quam commodi numquam
-        suscipit. Reprehenderit consectetur enim explicabo culpa. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Laudantium totam vitae
-        aliquid reprehenderit quisquam praesentium soluta voluptatibus autem.
-        Blanditiis at repellendus deleniti velit deserunt animi sequi, ipsa
-        atque impedit laborum?
-      </p>
-    </article>
+    <main>
+      <article>
+        <h2>Lorem lorem lorem</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          possimus pariatur eos quam nostrum repellat. Quasi accusantium,
+          facilis dolor reprehenderit expedita tenetur pariatur incidunt
+          distinctio nostrum itaque reiciendis excepturi non! Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Quae, aspernatur modi molestias
+          non natus nam distinctio odit voluptatem esse ad aliquid? Illum quo,
+          quas sapiente culpa quia voluptates accusantium amet.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe et rem
+          dolorum voluptatibus exercitationem repudiandae ut expedita repellat
+          sit provident, beatae aliquam pariatur iure culpa animi officia
+          perferendis architecto tenetur?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          mollitia fuga nisi et aliquid suscipit ad, tempore sequi cupiditate
+          odio vitae dolores veniam placeat aspernatur, impedit temporibus,
+          quidem reiciendis porro! Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Reiciendis nam eligendi molestias veritatis
+          voluptates, debitis esse rerum sint laboriosam iste asperiores quam
+          commodi numquam suscipit. Reprehenderit consectetur enim explicabo
+          culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Laudantium totam vitae aliquid reprehenderit quisquam praesentium
+          soluta voluptatibus autem. Blanditiis at repellendus deleniti velit
+          deserunt animi sequi, ipsa atque impedit laborum?
+        </p>
+      </article>
+    </main>
     <!-- estudar JavaScript !!! -->
     <script>
-        function clickMenu(){
-            if (itens.style.display == "block"){
-            itens.style.display = "none"
-            } else {
-                itens.style.display = "block"
-            }
+      function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = "block";
+        } else {
+          itens.style.display = "none";
         }
+      }
+
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
     </script>
   </body>
 </html>
