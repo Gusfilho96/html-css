@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
+    <main>
+      <h1>CSS</h1>
+      <ul>
+        <li>
+          <span class="tag">:root</span> Serve para adicionar algum atalho para
+          cores, fontes, etc.
+        </li>
+        <li>
+          <span class="tag">&ltp style="background-color: yellow;"></span>Esse
+          estilo é chamado em linha, altera o estilo de uma tag, esse tipo de
+          modificação tem a maior prioridade.
+        </li>
+        <li>
+          <span class="tag"
+            >&ltstyle&gt h2 { background-color: black; } &lt/style&gt</span
+          >
+          Colocando style na pagina .html é chamado de local, serve para fazer
+          varias modificação naquela página especifica.
+        </li>
+        <li>
+          <span class="tag"
+            >&ltlink rel="stylesheet" href="style.css" /&gt</span
+          >
+          Serve para criar uma página dedicada ao CSS, esse tipo de modificação
+          é chamado de interno.
+        </li>
+        <li>
+          <span class="tag">ID = #</span> Forma de modificar tags com esse ID.
+        </li>
+        <li>
+          <span class="tag">Class = .</span> Forma de modificar tags com essa
+          Class, é uma otima forma de modificar vários itens.
+        </li>
+        <li>
+          <span class="tag">Pseudo-classes = :</span> Configura o estado de um
+          elemento, adicionar algum efeito ao passar o mouse por exemplo.
+        </li>
+        <li>
+          <span class="tag">Pseudo-elemento = ::</span> Permite modificar uma
+          parte do elemento, um exemplo seria adicionar a palavra link antes do
+          elemento <span class="tag">&lta&gt</span>.
+        </li>
+        <li>
+          Fomratos de cor
+          <ul class="inlist">
+            <li>
+              <span class="atr">#a52a2a</span> Hexadecimal: 0 1 2 3 4 5 6 7 8 9
+              A B C D E F
+            </li>
+            <li>
+              <span class="atr">rgb(165, 42, 42)</span> Código RGB: 0 a 255
+            </li>
+            <li><span class="atr">HSL</span> Hue, Saturation, Luminosity</li>
+          </ul>
+        </li>
+        <li>
+          Imagens de fundo.
+          <ul class="inlist">
+            <li>
+              <span class="atr">Position</span> Serve para escolher o
+              posicionamento da imagem, por padrão é left top.
+            </li>
+            <li>
+              <span class="atr">Size</span> Por padrão ela é automatica, podemos
+              alterar para: Contain(sempre exibe toda a imagem), Cover(adapta a
+              imagem e apenas exibira tudo em um certo tamanho)
+            </li>
+            <li>
+              <span class="atr">Attachment</span> Podemos deixar a imagem
+              fixada, mesmo com rolagem.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="tag">Transform</span> Sempre usar ao fim das
+          configurações.
+          <ul class="inlist">
+            <li>
+              <span class="atr">translate</span> Podemos mover o ponto que a
+              imagem uniliza de referencia ou criar uma animação.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="tag">::-webkit-scrollbar</span> Podemos remover a
+          scrollbar
+        </li>
+        <li>
+          <span class="tag">Shothands</span> Serve para fazer várias
+          configurações em uma unica linha
+          <ul class="inlist">
+            <li><span class="atr">Border</span>[size][style][color]</li>
+            <li>
+              <span class="atr">Font</span
+              >[style][variant][weight][size][family]
+            </li>
+            <li>
+              <span class="atr">Background</span
+              >[color][image][position][repeat][size][attachment]
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+    <p id="voltar">
+      <a href="index.html" target="_self" rel="prev">Voltar</a>
+    </p>
+  </body>
+</html>

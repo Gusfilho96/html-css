@@ -1,94 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Modulo 3</title>
+    <link rel="stylesheet" href="mobile.css" />
+    <title>Tabelas</title>
   </head>
   <body>
-    <h2>Hierarquias</h2>
-    <p>
-      É importante manter sempre a hierarquias, já que mesmo se colocado no topo
-      um item que não segue a hierarquia, vai surgir em um local diferente.
-      Abaixo a ordem:
-    </p>
-    <p>
-      Caption = <mark>&ltcaption&gt</mark> <br />
-      Table = <mark>&lttable&gt</mark> <br />
-      Row = <mark>&lttr&gt</mark> <br />
-      Header = <mark>&ltth&gt</mark> <br />
-      Data = <mark>&lttd&gt</mark> <br /><br />
-      OBS: O Fechamento dessas tags é opcional.
-    </p>
-
-    <h2>Anatomia</h2>
-    <p>
-      Podemos utilizar algumas outras tags para organizar melhor as tabelas de
-      forma semantica. São elas: <mark>&ltthead&gt</mark>,
-      <mark>&lttbody&gt</mark> e <mark>&lttfoot&gt</mark>.
-    </p>
-    <h2>Zebrado</h2>
-    <p>
-      Utiliza-se a pseudoclass: <mark>:nth-child(even)</mark>,
-      <mark>:nth-child(odd)</mark>, <mark>:nth-child(n2)</mark> e
-      <mark>:nth-child(2n-1)</mark>
-    </p>
-    <h2>Selecionar Coluna ou Linha</h2>
-    <p>
-      Usando <mark>&ltcolgroup&gt</mark>, <mark>&ltrowgroup&gt</mark> e dentro
-      <mark>&ltcol&gt</mark>, <mark>&ltrow&gt</mark> podemos criar classes e/ou
-      ids para nossas colunas, inclusive usar <mark>span</mark> para modificar
-      multiplas colunas ou linhas
-    </p>
-    <h2>Tabela responsiva</h2>
-    <p>Colocando a tabela dentro de uma <mark>&ltdiv&gt</mark> podemos usar <mark>overflow</mark> para criar uma rolagem horizontal e/ou vertical na tabela.</p>
-    <table>
-      <caption>
-        Controle de Gastos
-      </caption>
-      <thead>
-        <tr class="row1">
-          <th scope="col">Data</th>
-          <th scope="col">Discriminação</th>
-          <th scope="col">Detalhe</th>
-          <th scope="col">Valor</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Otica</td>
-          <td>Deposito</td>
-          <td>R$ 1,500</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Sul american</td>
-          <td>Saúde</td>
-          <td>- R$ 1,200</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>Sol nascente</td>
-          <td>Aluguel</td>
-          <td>- R$ 2,300</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>Venda Celular</td>
-          <td>Venda</td>
-          <td>R$ 5,300</td>
-        </tr>
-      </tbody>
-      <tfoot class="final">
-        <tr>
-          <th scope="row" colspan="2">Valor Total</th>
-          <td colspan="2">R$ 3300</td>
-        </tr>
-      </tfoot>
-    </table>
-    <p style="text-align: center; font-size: 25px">
+    <main>
+      <h1>Tabelas</h1>
+      <ul>
+        <li>
+          <span class="tag">Hierarquias</span> É importante manter sempre a
+          hierarquias, já que mesmo se colocado no topo um item que não segue a
+          hierarquia, vai surgir em um local diferente.
+        </li>
+        <li>
+          <span class="tag">&ltthead&gt</span>,
+          <span class="tag">&lttbody&gt</span> e
+          <span class="tag">&lttfoot&gt</span> Para tabelas maiores é preferivel
+          separar as partes da tabela.
+        </li>
+        <li><span class="tag">&ltcaption&gt</span> título da tabela</li>
+        <li><span class="tag">&lttable&gt</span> A tabela</li>
+        <li><span class="tag">&lttr&gt</span> A linha da tabela</li>
+        <li><span class="tag">&ltth&gt</span> Tableheader</li>
+        <li><span class="tag">&lttd&gt</span> Data</li>
+        <li>
+          <span class="tag">Zebrado</span> Utilizando pseudoclass: podemos
+          modificar todo filho impar ou par.
+          <ul class="inlist">
+            <li>
+              <span class="atr">:nth-child(even)</span> ou
+              <span class="atr">:nth-child(n2)</span> para linhas pares
+            </li>
+            <li>
+              <span class="atr">:nth-child(odd)</span> ou
+              <span class="atr">:nth-child(2n-1)</span> para linhas impares.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Seletor de coluna ou linha
+          <ul class="inlist">
+            <li>
+              Usando <span class="atr">&ltcolgroup&gt</span> ou
+              <span class="atr">&ltrowgroup&gt</span> e dentro
+              <span class="atr">&ltcol&gt</span> ou
+              <span class="atr">&ltrow&gt</span> podemos criar classes e/ou ids
+              para linhas ou colunas, inclusive utilizar
+              <span class="atr">span</span> para modificar multiplas linhas ou
+              colunas.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Criando <span class="tag">&ltdiv&gt</span> odemos usar
+          <span class="tag">overflow</span>para criar uma barra de rolagem
+          horizontal e/ou vertical na tabela.
+        </li>
+      </ul>
+    </main>
+    <p id="voltar">
       <a href="index.html" target="_self" rel="prev">Voltar</a>
     </p>
   </body>

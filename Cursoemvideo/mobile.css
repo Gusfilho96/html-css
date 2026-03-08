@@ -9,8 +9,7 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-html,
-body {
+html, body {
   background-color: #181a1b;
 }
 
@@ -19,11 +18,37 @@ main {
   width: 100vw;
 }
 
+.index{
+  background-color: #222426;
+  height: 180px;
+}
+
+.index > h1{
+  font-size: 3em;
+}
+
+.index > p{
+  font-size: 1.3em;
+  text-align: center;
+  padding: 0px;
+}
+
 h1 {
   width: 100%;
   background-color: #222426;
   padding: 30px;
   text-align: center;
+}
+
+.mainav{
+  font-size: 1.4em;
+  text-align: center;
+  list-style-type: none;
+  padding: 30px;
+}
+
+.mainav > li > a:hover{
+  color: #866b55;
 }
 
 .tag {

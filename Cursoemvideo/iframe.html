@@ -4,57 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iframe</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
   </head>
   <body>
-    <h2>Todos os sites aceitam Iframe?</h2>
-    <p>
-      Não, um dos problemas do Iframe é que muitos sites não aceitam ser
-      "compartilhados" via Iframes. No caso do YouTube, é a forma que ele deixa
-      você hospedar vídeos no seu site.
-    </p>
-    <h2>Tamanho Padão:</h2>
-    <p>
-      Padrão: 300x150. Podemos adicionar um outro tamanho pelo próprio Iframe ou
-      pelo CSS (CSS sempre soberano nesse caso)
-    </p>
-    <h2>Navegação</h2>
-    <ul>
-      <li><a href="extras/pag.html" target="navegar">Home</a></li>
-      <li><a href="extras/pag1.html" target="navegar">Pagina 1</a></li>
-      <li><a href="extras/pag2.html" target="navegar">Pagina 2</a></li>
-      <li><a href="extras/pag3.html" target="navegar">Pagina 3</a></li>
-    </ul>
-    <iframe name="navegar" src="extras/pag.html" frameborder="0"
-      >O Site não pode ser exibido, aqui está o link:
-      Exemplo.bbbbrrr.commm</iframe
-    >
-    <p>
-      Podemos Utilizar <mark>Iframe</mark> e adicionar um <mark>Nome</mark> nos
-      parâmetros em conjunto com <mark>target="nome"</mark> para abrir a pagina
-      no iframe.
-    </p>
-    <h2>Segurança</h2>
-    <h3>Problemas</h3>
-    <p>
-      O maior problema de usar Iframe em páginas fora do site, é o fato de você
+    <main>
+      <h1>Iframe</h1>
+      <ul>
+        <li><span class="tag">problemas</span> O maior problema do iframe é que muitos sites não aceitam ser "compartilhados" via iframe.</li>
+        <li><span class="tag">tamanhos</span>Por padrão o tamanho do iframe é de 300x150.</li>
+        <li><span class="tag">target</span>Podemos adicionar esse atributo em um <span class="tag">&lta&gt</span> e adicionar no iframe o atributo <span class="tag">name</span> com a mesma identificação, fazendo o <span class="tag">&lta&gt</span> mudar a página do iframe.</li>
+        <li><span class="tag">Segurança</span>
+        <ul class="inlist">
+          <li><span class="atr">problema</span>O maior problema de usar Iframe em páginas fora do site, é o fato de você
       ficar vulnerável a qualquer ataque no naquele site. Fora isso, tem o fato
-      de que o site pode alterar o conteudo e trazer problemas para o seu site.
-    </p>
-    <h3>Solução</h3>
-    <p>Adicionando o parâmetro <mark>referrerpolicy="no-referrer"</mark> o site que está usando um iframe do seu site, não conseguira coletar dados de usuarios. Outro parâmetro importantissimo é o <mark>sandbox="sandbox"</mark> ele basicamente bloqueia tudo referente ao iframe. Podemos ainda permitir algumas coisas especificas ou da mesma origem, podemos utilizar: <mark>"allow-same-origin"</mark>, <mark>"allow-forms"</mark>, <mark>"allow-scripts"</mark>, etc</p>
-    <h2>Detalhes:</h2>
-    <p>
-      É uma boa sempre colocar uma <mark>mensagem</mark> ou
-      <mark>link</mark> dentro do <mark>Iframe</mark>, dessa forma, caso o
-      navegador não consiga exibir o conteúdo os usuários vão conseguir acessar
-      o site.
-    </p>
-    <p>
-      <mark>Scrolling="yes"</mark> ou <mark>"no"</mark> esse parâmetro não
-      funciona em todos os navegadores.
-    </p>
-    <p style="text-align: center; font-size: 25px">
+      de que o site pode alterar o conteudo e trazer problemas para o seu site.</li>
+          <li><span class="atr">Solução</span> Adicionando o parâmetro <span class="atr">referrerpolicy="no-referrer"</span> o site que está usando um iframe do seu site, não conseguira coletar dados de usuarios. Outro parâmetro importantissimo é o <span class="atr">sandbox="sandbox"</span> ele basicamente bloqueia tudo referente ao iframe. Podemos ainda permitir algumas coisas especificas ou da mesma origem, podemos utilizar: <span class="atr">"allow-same-origin"</span>, <span class="atr">"allow-forms"</span>, <span class="atr">"allow-scripts"</span>, etc</li>
+        </ul>
+        </li>
+        <li><span class="tag">scrolling</span> "yes" ou "no", importante lembrar que não funciona em todos os navegadores.</li>
+      </ul>
+    </main>
+    <p id="voltar">
       <a href="index.html" target="_self" rel="prev">Voltar</a>
     </p>
   </body>
