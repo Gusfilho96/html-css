@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Formulários:</h1>
+      <ul>
+        <li>
+          <span class="tag">&ltform&gt</span> Forma mais basica de criar um
+          formulário.
+        </li>
+        <li>
+          <span class="tag">action</span> Informa para onde será enviado o
+          formulário.
+        </li>
+        <li>
+          <span class="tag">get</span> O metodo get serve para enviar
+          informações não sigilosas, até 3000 bites.
+        </li>
+        <li>
+          <span class="tag">post</span> Apesar de ser um pouco mais seguro, ele
+          ainda permite que as informações sejam acessadas.
+        </li>
+        <li>
+          <span class="tag">input:</span> Podemos criar vários tipos de input,
+          alguns deles são:
+          <ul class="inlist">
+            <li>
+              <span class="atr">color</span> Esse tipo de input premite que o
+              usuario selecione alguma cor, podemos usar
+              <span class="atr">value</span> para iniciar com alguma cor.
+            </li>
+            <li>
+              <span class="atr">range</span> Esse metodo funciona muito bem para
+              presquisas de satisfação, podemos colocar valor
+              <span class="atr">min</span> ou <span class="atr">max</span> e o
+              <span class="atr">value</span> para o nivel inicial.
+            </li>
+            <li>
+              <span class="atr">file</span> Esse metodo permite enviar algum
+              arquivo, ao utilizar esse recurso é importante utilizar o metodo
+              <span class="atr">Post</span>, caso contrario o arquivo não será
+              enviado.
+            </li>
+            <li>
+              <span class="atr">checkbox</span> O input de tipo
+              <span class="atr">checkbox</span> serve para uma marcação simples,
+              um exemplo seria a marcação de esportes que a pessoa pratica.
+              Utilizar <span class="atr">label</span> nesse caso server tanto
+              para o navegador saber a quem aquele input está ligado, e servira
+              também para que o usuario utilize a palavra para marcar a
+              <span class="atr">checkbox</span>.
+            </li>
+            <li>
+              <span class="atr">radio</span> Pode ser utilizado quando deve-se
+              marcar apenas uma opção, um exemplo seria a seleção do sexo. Nesse
+              caso o <span class="atr">name</span> deve ser o mesmo em ambos
+              dentro daquele <span class="atr">fieldset</span>, já
+              <span class="atr">label</span> pode ser utilizado normalmente.
+              Outra coisa importante é o value, um simples
+              <span class="atr">value="M" ou "F"</span> ajudara na hora do
+              submit.
+            </li>
+            <li>
+              <span class="atr">select</span> Esse elemento tem vários atibutos
+              interessantes, podemos colocar <span class="atr">option</span> com
+              as opções e o <span class="atr">value</span> que serão enviados ao
+              serem selecionados. Podemos também adicionar
+              <span class="atr">optgroup</span> para adicionar grupos dentre as
+              escolhas, o atributo <span class="atr">label</span> pode então ser
+              adicionado para informar o nome do grupo. Outro elemento é o
+              <span class="atr">selected</span> utilizado dentro de
+              <span class="atr">option</span> para que aquela opção já apareça
+              selecionada. Obs: <span class="atr">select</span> é um elemento
+              separado, não um <span class="atr">input:select</span>
+            </li>
+            <li>
+              <span class="atr">text</span> O input desse tipo é bastante util,
+              ele pode servir para enviar um texto simples ou criar uma lista
+              que se adapta ao usuário. Para criar uma lista usando
+              <span class="atr">text</span>, adicione o atributo
+              <span class="atr">list</span> e crie um elemento
+              <span class="atr">datalist</span>, adicione um
+              <span class="atr">id</span> que sera lincado o atributo
+              <span class="atr">list</span> e dentro dela adicione
+              <span class="atr">option</span>com todos os elementos da lista que
+              você quer.
+            </li>
+            <li>
+              <span class="atr">textarea</span> Serve para que o usuário tenha
+              uma area onde ele pode escrever uma mensagem, acredito que isso é
+              mais utilizado para sugestões no caso de serviços prestados. Para
+              criar essa área, basta adicionar o elemento
+              <span class="atr">textarea</span>, nela você pode definir o numero
+              de <span class="atr">colunas</span> e
+              <span class="atr">linhas</span> mostradas, esse tamanho pode ser
+              configurável pelo usuario
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="tag">label</span> Serve para fazer a ligação com o input,
+          essa ligação não tem mudança visual.
+        </li>
+        <li>
+          <span class="tag">&ltfieldset&gt</span> Funciona para agrupar os
+          campos contidos nessa tag, isso pode ser usado em conjunto com a tag
+          <span class="atr">&ltlegend&gt</span> dentro, possibilitando que todos
+          os dados pessoais, por exemplo fiquem dentro de um campo.
+        </li>
+        <li>
+          <span class="tag">Alguns atributos:</span>
+          <ul class="inlist">
+            <li><span class="atr">required</span></li>
+            <li><span class="atr">min/max lenght</span></li>
+            <li><span class="atr">placeholder</span></li>
+            <li><span class="atr">autocomplete</span></li>
+            <li><span class="atr">min/max</span></li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+    <h2>Estudar</h2>
+    <p>
+      Depois pesquisar e estudar RegEx ou expressões regulares, importante para
+      uso de formularios com e-mails e telefones. Obs: Aula 23 do modulo 4, o
+      Guanabara ensina a usar patten, e pediu para estudar mais sobre o assunto.
+    </p>
+    <p id="voltar">
+      <a href="index.html" target="_self" rel="prev">Voltar</a>
+    </p>
+  </body>
+</html>
